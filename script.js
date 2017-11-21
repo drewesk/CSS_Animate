@@ -1,7 +1,7 @@
 const view = document.querySelector("input");
 
 function updateSideView() {
-  document.body.classList.toggle('view-on', view.checked);
+  document.querySelector('main').classList.toggle('view-on', view.checked)
 }
 
 view.addEventListener('click', updateSideView);
